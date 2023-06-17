@@ -18,5 +18,8 @@ class Post(models.Model):
 class Meta:
     ordering = ['-created_on']
 
+class PageViews(models.Model):
+    count = models.IntegerField(default=0)
+    
 def __str__(self):
     return self.title

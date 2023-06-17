@@ -23,8 +23,9 @@
           <h2 class="card-title">{{ post.title }}</h2>
           <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
           <p class="card-text">{{post.content|slice:":200"}}</p>
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary" onclick="incrementCounter('{{ post.id }}')">Read More &rarr;</a>
         </div>
+        <p class="counter" style="margin-left: 30px;">Views : <span id="counter_{{ post.id }}">0</span></p>
       </div>
       {% endfor %}
     </div>
@@ -33,4 +34,12 @@
     {% endblock sidebar %}
   </div>
 </div>
+<script>
+  function incrementCounter(postId) {
+  var counterElement = document.getElementById("counter_" + postId);
+  var count = parseInt(counterElement.textContent);
+  count++;
+  counterElement.textContent = count;
+}
+</script>
 {%endblock%}
