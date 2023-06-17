@@ -3,6 +3,11 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 STATUS = ((0, "Draft"), (1, "Published"))
+TYPE_CHOICES = (
+    ('film', 'Film'),
+    ('book', 'Book'),
+    ('general', 'General'),
+)
 
 class Post(models.Model):
     title = models.CharField(max_length = 200, unique=True)
@@ -13,6 +18,7 @@ class Post(models.Model):
     content = models.TextField()
     status = models.IntegerField(choices=STATUS, default=0)
     image = models.ImageField(upload_to='media/', blank=True, null=True)
+    type = models.CharField(max_length=20, choices=TYPE_CHOICES, default='general')
     # other fields and methods
 
 class Meta:

@@ -40,28 +40,6 @@
         </div>
       </div>
       {% endif %}
-      {% if post.type == 'book' %} {# Display only if the type is 'book' #}
-      <div class="card mb-4">
-        <div class="card-body">
-          <!-- post content -->
-          <h2 class="card-title">{{ post.title }}</h2>
-          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-          <p class="card-text">{{post.content|slice:":200"}}</p>
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary" onclick="incrementCounter('{{ post.id }}')">Read More &rarr;</a>
-        </div>
-      </div>
-      {% endif %}
-      {% if post.type == 'film' %} {# Display only if the type is 'film' #}
-      <div class="card mb-4">
-        <div class="card-body">
-          <!-- post content -->
-          <h2 class="card-title">{{ post.title }}</h2>
-          <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-          <p class="card-text">{{post.content|slice:":200"}}</p>
-          <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary" onclick="incrementCounter('{{ post.id }}')">Read More &rarr;</a>
-        </div>
-      </div>
-      {% endif %}
       {% endfor %}
     </div>
     {% block sidebar %} 
