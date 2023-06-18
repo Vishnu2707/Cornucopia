@@ -1,7 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-
+  <style>
+    .navbar-toggler-icon {
+      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    }
+  </style>  
 <head>
   <title>Blog App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,8 +28,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNav" style="height: 70px;">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'home' %}">Cornucopia 💡👀</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>        
       <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- Navigation links -->
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-black">
+            <a class="nav-link text-black font-weight-bold" href="{% url 'home' %}">Home</a>
+          </li>
           <li class="nav-item text-black">
             <a class="nav-link text-black font-weight-bold" href="{% url 'book' %}">Book Review</a>
           </li>
@@ -42,7 +53,7 @@
             <a class="nav-link text-black font-weight-bold" href="#" onclick="toggleSection();scrollToBottom();">Contact</a>
           </li>
         </ul>
-      </div>
+      </div>      
     </div>
   </nav>
   {% block content %}
@@ -233,6 +244,9 @@ function toggleSec(section1) {
     display: none;
   }
 </style>
+<!-- Add these script tags before the closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
