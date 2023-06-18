@@ -27,13 +27,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item text-black">
-            <a class="nav-link text-black font-weight-bold" href="book.html">Book Review</a>
+            <a class="nav-link text-black font-weight-bold" href="{% url 'book' %}">Book Review</a>
           </li>
           <li class="nav-item text-black">
-            <a class="nav-link text-black font-weight-bold" href="film.html">Film Review</a>
+            <a class="nav-link text-black font-weight-bold" href="{% url 'film' %}">Film Review</a>
           </li>
           <li class="nav-item text-black">
-            <a class="nav-link text-black font-weight-bold" href="general.html">Social Views</a>
+            <a class="nav-link text-black font-weight-bold" href="{% url 'general' %}">Social Views</a>
           </li>
           <li class="nav-item text-black">
             <a class="nav-link text-black font-weight-bold" href="#section1" onclick="scrollToSection(event);toggleSec('section1');">Author</a>
