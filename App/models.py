@@ -19,6 +19,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     image = models.ImageField(upload_to='media/', blank=True, null=True)
     type = models.CharField(max_length=20, choices=TYPE_CHOICES, default='general')
+    view_count = models.PositiveIntegerField(default=0)
     # other fields and methods
 
 class Meta:
