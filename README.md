@@ -1,4 +1,4 @@
-<img width="1432" alt="Screenshot 2023-06-17 at 11 51 07 PM" src="https://github.com/Vishnu2707/Cornucopia/assets/86302373/225c6434-e845-42e1-980d-52fda03b5552">
+<img width="1436" alt="Screenshot 2023-06-20 at 1 52 38 AM" src="https://github.com/Vishnu2707/Cornucopia/assets/86302373/d481237b-9f1f-4e54-8d80-2eb1de799456">
 
 # Blog
 A web app created using Django for blogging.
