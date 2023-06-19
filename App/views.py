@@ -24,6 +24,17 @@ class NavG(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'general.html'
 
+class NavContact(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'contact.html'
+
+class NavHam(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'ham.html'
+
+class NavAut(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'author.html'
 
 
 

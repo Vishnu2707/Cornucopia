@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h3 class=" site-heading my-4 mt-3 text-black"> Living to tell the tale ✍️ </h3>
+          <p class="text-dark">"A person who never made a mistake never tried anything new." ~ Albert Einstein ✨✨✨ </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <!-- Blog Entries Column -->
+    <!-- Blog Entries Column -->
+    <div class="col-md-8 mt-3 left">
+        <div class="card mb-4" style="transition: all 0.3s ease;bottom: 0;">
+          <div class="card-body">
+            <div class="card-body text-center">
+                <h2 class="card-title" style="margin-top: 20px;">About Me</h2>
+                <!-- rest of the content -->
+            </div>              
+            <div>
+                <div class="row justify-content-center" style="padding: 20px;">
+                    <div class="card">
+                      <img src="{% static 'App/me.jpg' %}" alt="Image" style="height: 550px; width: 450px;">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Abhinav S</h5>
+                      </div>
+                    </div>
+                </div>                  
+              <!-- <div class="col-lg-8 content" data-aos="fade-left"> -->
+              <p style="margin-top: 20px;">"Welcome to my website! My name is Abhinav S, and I'm a physics enthusiast, writer, and philanthropist. I have a strong passion for exploring the mysteries of the universe and unraveling the principles that govern our world.</p>
+              <p>I hold a bachelor's degree in Physics, which has provided me with a solid foundation in understanding the fundamental laws that shape our reality. However, my interests extend beyond the realm of science. I believe in the power of words to inspire and bring about positive change. As a writer, I strive to create engaging content that sparks curiosity and fosters intellectual growth.</p>
+              <p>On this website, you will find a collection of my writings, insights into the fascinating world of physics, and updates on my philanthropic endeavors. Join me as we explore the wonders of the universe, delve into thought-provoking discussions, and work towards building a brighter future together."</p>
+              <p>I'm always seeking new opportunities to collaborate with like-minded people and expand my network. If you are interested in connecting or learning more about my piece of work, please feel free to reach out.</p>
+              <!-- </div> -->
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<style>
+    .card {
+      box-shadow: 0 16px 48px #6a6a6b;
+    }
+  </style>
+{%endblock%}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h3 class=" site-heading my-4 mt-3 text-black"> Living to tell the tale ✍️ </h3>
+          <p class="text-dark">"A person who never made a mistake never tried anything new." ~ Albert Einstein ✨✨✨ </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title" style="margin-bottom: 20px;">Useful Links</h2>
+              <div class="col-md-6">
+                <ul class="list-unstyled social-links">
+                    <li style="display: block;"><a href="{% url 'home' %}" style="margin-right: 20px;font-size: medium;">Home</a></li> 
+                    <li style="display: block;"><a href="{% url 'book' %}" style="margin-right: 20px;font-size: medium;">Book Review</a></li> 
+                    <li style="display: block;"><a href="{% url 'film' %}" style="margin-right: 20px;font-size: medium;">Film Review</a></li> 
+                    <li style="display: block;"><a href="{% url 'general' %}" style="margin-right: 20px;font-size: medium;">Social Views</a></li> 
+                    <li style="display: block;"><a href="#" style="margin-right: 20px;font-size: medium;">Author</a></li> 
+                    <!-- <li style="display: block;"><a href="{% url 'contact' %}" style="margin-right: 20px;font-size: medium;">Contact</a></li>  -->
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <style>
+    
+    .social-links li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .social-links a {
+      color: #110f0f;
+      font-size: 24px;
+    }
+    
+    .footer h4 {
+      margin-bottom: 10px;
+    }
+    </style>
+{%endblock%}

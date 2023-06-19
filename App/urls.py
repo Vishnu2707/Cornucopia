@@ -7,4 +7,7 @@ urlpatterns = [
     path('book.html', views.NavB.as_view(), name='book'),
     path('film.html', views.NavF.as_view(), name='film'),
     path('general.html', views.NavG.as_view(), name='general'),
+    path('contact.html', views.NavContact.as_view(), name="contact"),
+    path('ham.html', views.NavHam.as_view(), name="ham"),
+    path('author.html', views.NavAut.as_view(), name="author"),
 ]
